@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <form action="#" method="post">
+        <span class="close-icon" onclick="closeForm()">&#10006;</span>
+        <div class="title">Create Account</div>
+        <label for="user_name">Username:</label>
+        <input type="user_name" id="user_name" name="user_name" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <input type="submit" value="Sign Up">
+
+        <div class="login">
+            <hr>
+            <p>Already have an account?<a href="login.html">Login here</a></p>
+        </div>
+    </form>
+
+    <script>
+        function closeForm() {
+            document.querySelector('form').style.display = 'none';
+            window.location.href='index1.html';
+        }
+    </script>
+
+</body>
+
+</html>
